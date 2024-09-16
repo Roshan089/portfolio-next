@@ -54,7 +54,7 @@ const Hero = () => {
          
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+            Hi! I'm Roshan, a Fullstack Developer based in Croatia.
                   </p>
                    <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
