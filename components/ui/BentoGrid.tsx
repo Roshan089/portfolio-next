@@ -1,19 +1,17 @@
-"use client" 
+ "use client"
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
-//import Lottie from "react-lottie";
+import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
 
-import MagicButton from "./MagicButton";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { GlobeDemo } from "./GridGlobe";
-
-
-//import animationData from "@/data/confetti.json";
+import GridGlobe from "./GridGlobe";
+import animationData from "@/data/confetti.json";
+import MagicButton from "./MagicButton";
 
 export const BentoGrid = ({
   className,
@@ -60,10 +58,10 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
+  const  defaultOptions = {
     loop: copied,
     autoplay: copied,
-    //animationData: animationData,
+    animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -140,7 +138,7 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          {id === 2 && <GlobeDemo/>}
+          {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -178,7 +176,13 @@ export const BentoGridItem = ({
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
-             
+              <div
+                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+                  }`}
+              >
+                {/* <img src="/confetti.gif" alt="confetti" /> */}
+                <Lottie options={defaultOptions} height={200} width={400} />
+              </div>
 
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
