@@ -10,44 +10,44 @@ const Experience = () => {
         My <span className="text-purple">work experience</span>
       </h1>
 
-      <div className="w-full mt-12 grid lg: grid-cols-1 gap-10">
-        {workExperience.map((card) => (
-          <Button
-            key={card.id}
-            //   random duration will be fun , I think , may be not
-            duration={Math.floor(Math.random() * 10000) + 10000}
-            borderRadius="1.75rem"
-            style={{
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-              borderRadius: `calc(1.75rem* 0.96)`,
-            }}
-            // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-          >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-             
-              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 ">
-              
-              <img
-                src={card.thumbnail}
-                alt={card.thumbnail}
-                className="lg:w-32 md:w-20 w-16"
-              />
-              <h1 className=" text-start text-xl md:text-2xl font-normal">{card.date}</h1>
+      <div className="w-full mt-12 grid lg:grid-cols-1 gap-10">
+        {workExperience.map((card, i) => (
+          <div key={card.id}> {/* Move the key here */}
+            <Button
+              // Random duration for fun, may or may not be necessary
+              duration={Math.floor(Math.random() * 10000) + 10000}
+              borderRadius="1.75rem"
+              style={{
+                background: "rgb(4,7,29)",
+                backgroundColor:
+                  "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+                borderRadius: `calc(1.75rem * 0.96)`,
+              }}
+              className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+                <div className="flex lg:flex-col flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 ">
+                  <img
+                    src={card.thumbnail}
+                    alt={card.thumbnail}
+                    className="lg:w-32 md:w-20 w-16"
+                  />
+                  <h1 className="whitespace-nowrap text-start text-xl md:text-2xl font-normal">
+                    {card.date}
+                  </h1>
+                </div>
+                <div className="lg:ms-5">
+                  <h1 className="flex text-start text-xl md:text-xl font-bold">
+                    {card.title}
+                    <p className="font-semibold pos"> innobytes</p>
+                  </h1>
+                  <p className="text-start text-white-100 mt-3 font-semibold">
+                    {card.desc}
+                  </p>
+                </div>
               </div>
-              <div className="lg:ms-5">
-                <h1 className=" flex text-start text-xl md:text-2xl font-bold">
-                  {card.title}
-                  
-                </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
-                </p>
-              </div>
-            </div>
-          </Button>
+            </Button>
+          </div>
         ))}
       </div>
     </div>

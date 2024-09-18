@@ -173,11 +173,11 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern               ",
+    title: "Full stack Engineer Intern at   ",
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
     className: "md:col-span-2",
         thumbnail: "/exp1.svg",
-    date: "june 24-aug 24"
+    date: "aug 23- dec 23"
   },
   {
     id: 2,
@@ -185,7 +185,7 @@ export const workExperience = [
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
     className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
-    date: "aug 23-dec23"
+    date: "aug 23- dec 23"
   },
  
 ];
@@ -193,11 +193,13 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+        img: "/git.svg",
+    link:"https://github.com/Roshan089",
   },
   {
     id: 2,
-    img: "/twit.svg",
+      img: "/twit.svg",
+     link:"https://x.com/Roshan7425",
   },
   {
     id: 3,
