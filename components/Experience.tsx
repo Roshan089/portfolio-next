@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
+import Image from 'next/image';
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorder";
@@ -11,7 +14,7 @@ const Experience = () => {
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-1 gap-10">
-        {workExperience.map((card, i) => (
+        {workExperience.map((card) => (
           <div key={card.id}> {/* Move the key here */}
             <Button
               // Random duration for fun, may or may not be necessary
@@ -27,9 +30,10 @@ const Experience = () => {
             >
               <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
                 <div className="flex lg:flex-col flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 ">
-                  <img
+                  <Image
                     src={card.thumbnail}
                     alt={card.thumbnail}
+                    width={500} height={300}
                     className="lg:w-32 md:w-20 w-16"
                   />
                   <h1 className="whitespace-nowrap text-start text-xl md:text-2xl font-normal">
