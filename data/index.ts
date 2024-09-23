@@ -1,5 +1,5 @@
 export const navItems = [
-    { name: "Home", link: "" },
+    { name: "Home", link: "#/" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
  
@@ -88,22 +88,7 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/Roshan089/crypto-app",
   },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
-  },
+  
 ];
 
 export const testimonials = [
@@ -175,16 +160,16 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Full stack Engineer Intern at   ",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full stack Developer Intern at -Innobytes Services  ",
+    desc: "AssistFed in the development of a web-based platform using React.js, enhancing interactivity.",
     className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     date: "aug 23- dec 23"
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Frontend Deeloper - Heal Foundation",
+    desc: "Designed and developed web app for both desktop & mobile platforms using React and Tailwind.",
     className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     date: "aug 23- dec 23"

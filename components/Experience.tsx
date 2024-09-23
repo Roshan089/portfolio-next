@@ -42,7 +42,7 @@ const Experience = () => {
                 <div className="lg:ms-5">
                   <h1 className="flex text-start text-xl md:text-xl font-bold">
                     {card.title}
-                    <p className="font-semibold pos"> innobytes</p>
+                    <p className="font-semibold pos"> </p>
                   </h1>
                   <p className="text-start text-white-100 mt-3 font-semibold">
                     {card.desc}
