@@ -1,7 +1,8 @@
 export const navItems = [
+    { name: "Home", link: "" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+ 
   { name: "Contact", link: "#contact" },
 ];
 
@@ -72,19 +73,20 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "JSON to Typescript",
+    des: "Integrated Gemini AI with TypeScript-converted JSON data to enhance content personalization in a full-stackapplication.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
+    link: "https://github.com/Roshan089/Json_to_typescript/tree/main",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "CRYPTOTRACKER",
+    des: "CryptoTracker is a fully responsive web application designed to provide real-time cryptocurrency market data and portfolio tracking"
+,
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://github.com/Roshan089/crypto-app",
   },
   {
     id: 3,

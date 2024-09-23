@@ -6,7 +6,7 @@ import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-        <div className="pb-20 pt-36">
+        <div className="pb-20 pt-36" id='/'>
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -54,7 +54,7 @@ const Hero = () => {
          
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I'm Roshan, a Fullstack Developer based in Croatia.
+            Hi! I'm Roshan, I’m a MERN stack Web developer who is passionate about making error-free websites with 100% client satisfaction. I have a passion for learning and sharing my knowledge with others as publicly as possible. I love to solve real-world problems. I am strategic, goal-oriented, and always work with an end goal in mind.
                   </p>
                    <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
