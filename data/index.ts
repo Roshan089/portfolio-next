@@ -158,21 +158,22 @@ export const companies = [
 ];
 
 export const workExperience = [
+  
   {
     id: 1,
     title: "Full stack Developer Intern at -Innobytes Services  ",
     desc: "AssistFed in the development of a web-based platform using React.js, enhancing interactivity.",
     className: "md:col-span-2",
         thumbnail: "/exp1.svg",
-    date: "aug 23- dec 23"
+    date: "Aug 23- Dec 23"
   },
   {
     id: 2,
     title: "Frontend Deeloper - Heal Foundation",
-    desc: "Designed and developed web app for both desktop & mobile platforms using React and Tailwind.",
+    desc: "Designed and developed web app for both desktop & mobile platforms using React ,react native and Tailwind.",
     className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
-    date: "aug 23- dec 23"
+    date: "Jun 24- Dec 24"
   },
  
 ];
