@@ -76,7 +76,7 @@ export const projects = [
     title: "Advanced School Management System",
     des: " is a comprehensive platform designed to streamline and automate the administrative, academic, and communication functions of a school.",
     img: "/p1.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/next.svg", "/tail.svg","/doc.webp", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://school-management-sysyem.vercel.app/",
   },
   {
