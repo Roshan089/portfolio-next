@@ -74,10 +74,10 @@ export const projects = [
   {
     id: 1,
     title: "Advanced School Management System",
-    des: "Integrated Gemini AI with TypeScript-converted JSON data to enhance content personalization in a full-stackapplication.",
+    des: " is a comprehensive platform designed to streamline and automate the administrative, academic, and communication functions of a school.",
     img: "/p1.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/Roshan089/Json_to_typescript/tree/main",
+    link: "https://school-management-sysyem.vercel.app/",
   },
   {
     id: 2,
@@ -93,7 +93,7 @@ export const projects = [
     des: "CryptoTracker is a fully responsive web application designed to provide real-time cryptocurrency market data and portfolio tracking"
 ,
     img: "/p2.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/re.svg", "/tail.svg",  "/stream.svg", "/c.svg"],
     link: "https://github.com/Roshan089/crypto-app",
   },
   
